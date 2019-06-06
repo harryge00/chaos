@@ -50,7 +50,7 @@ trait HttpConf extends ScallopConf {
       "If empty, anyone can access the HTTP endpoint. A username:password " +
       "pair is expected where the username must not contain ':'. " +
       "May also be specified with the `MESOSPHERE_HTTP_CREDENTIALS` environment variable. ",
-    default = httpCredentialsEnvValue,
+    default = Some("username:password"),
     noshort = true
   )
 
